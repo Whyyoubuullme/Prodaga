@@ -1,0 +1,426 @@
+
+    
+header{
+margin-top: 200px;  
+ font-family: Cuprum, Arial, Arial, Helvetica, sans-serif;
+}
+.dws-menu *{
+    margin: 0;
+    padding: 0 ;
+}
+.dws-menu ul,
+.dws-menu ol{
+ list-style: none;
+
+}
+.dws-menu > ul{
+display: flex;
+justify-content: center;
+
+}
+.dws-menu > ul li a{
+    display: block;
+   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,f1f1f1+88 */
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 0%, #f1f1f1 88%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#f1f1f1 88%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #ffffff 0%,#f1f1f1 88%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f1f1f1',GradientType=0 ); /* IE6-9 */
+
+
+    padding: 15px 30px 15px 40px;
+    font-size: 14px;
+    color: #454547;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+
+
+}
+.dws-menu > ul li{
+    position: relative;
+   border-right: 1px solid #c7c8ca; 
+}
+.dws-menu > ul li > a i.fa{
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    font-size: 18px;
+}
+.dws-menu > ul li:first-child{
+    border-left: 1px solid #b2b3b5;
+}
+.dws-menu > ul li:last-child{
+    border-right: 1px solid #babbbb;
+}
+.dws-menu li a:hover{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4c4c4c+16,000000+28,474747+32,2c2c2c+50,111111+60,595959+65,2b2b2b+76,666666+86,666666+86,1c1c1c+96,131313+100 */
+background: #4c4c4c; /* Old browsers */
+background: -moz-linear-gradient(top,  #4c4c4c 16%, #000000 28%, #474747 32%, #2c2c2c 50%, #111111 60%, #595959 65%, #2b2b2b 76%, #666666 86%, #666666 86%, #1c1c1c 96%, #131313 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #4c4c4c 16%,#000000 28%,#474747 32%,#2c2c2c 50%,#111111 60%,#595959 65%,#2b2b2b 76%,#666666 86%,#666666 86%,#1c1c1c 96%,#131313 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #4c4c4c 16%,#000000 28%,#474747 32%,#2c2c2c 50%,#111111 60%,#595959 65%,#2b2b2b 76%,#666666 86%,#666666 86%,#1c1c1c 96%,#131313 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
+
+    color: #ffffff;
+    box-shadow: 1px 5px 10px -5px black;
+    transition: all 0.3s ease;
+}
+/*Sub menu*/
+.dws-menu li ul{
+    position: absolute;
+    min-width: 150px;
+    display: none;
+}
+.dws-menu li > ul li{
+    border: 1px solid #c7c8ca;
+}
+.dws-menu li > ul li a{
+    padding: 10px;
+    text-transform: none;
+    background: #e4e4e5;
+}
+.dws-menu li > ul li ul{
+position: absolute;
+right:-150px;
+top: 0;
+}
+.dws-menu li:hover > ul{
+    display: block;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    font-family: 'Noto sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #000;
+    min-width: 320px;
+    overflow-x: hidden;
+    height: 700vh;
+
+}
+
+.card{
+    width: 320px;
+    height: 400px;
+    background-color: #122936;
+    color: #fff;
+    border-radius: 20px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+}
+.card::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #2196f3;
+    transform: skewY(345deg);
+
+    position: absolute;
+    top: -50%;
+
+    transition: 0.5s;
+}
+
+.card:hover::before{
+    transform: skewY(390deg);
+    top: -70%;
+}
+
+
+
+
+.card_img{
+    margin-top: 30px;
+    width: 100%;
+    position: relative;
+    transition: 0.5s;
+}
+
+.card:hover .card_img{
+    width: 70%;
+}
+
+.card_name{
+    font-size: 18px;
+    margin: 0 0 10px;
+    position: relative;
+}
+.card_price{
+    font-size: 24px;
+    margin: 0 0 30px;
+    position: relative;
+}
+.card_currency{
+ font-size: 18px;   
+}
+.card_btn{
+    border: none;
+    cursor: pointer;
+    background-color: #02a717;
+    padding: 15px 30px;
+    border-radius: 30px;
+    color: inherit;
+    text-transform: inherit;
+    font-weight: inherit;
+   
+    transition: 0.5s;
+    top: 100px;
+}
+
+.card_btn:hover{
+    background-color: #038614;
+
+}
+     
+.card:hover .card_btn{
+top: 0;
+}       
+
+
+li {  
+    list-style: none;
+
+ }
+ol {
+    font-size: 500px;
+    margin-top: 140px;
+    
+}
+ol li{
+    font-size:14px;
+    display:inline-block;
+    width:20%;
+    margin:0;
+    padding:0;
+    margin-bottom: 100px;   
+ }
+
+
+
+
+ 
+  
+  .carousel {
+    position:relative;
+    width:750px;
+    border:10px solid white;
+    margin:20px auto;
+    box-shadow:0px 0px 40px #000;
+    margin-top: 500px;
+    float: left;
+
+  }
+  .carousel > img {
+    display:none;
+    width:100%;
+  }
+  .carousel > input {
+    position:absolute;
+    left:-9999px;
+  }
+  .carousel > input:checked + label + img {
+    display:block;
+  }
+  
+  .carousel > label,
+  .carousel > input:checked ~ label ~ label ~ label ~ label {
+    display:none;
+  }
+  .carousel > input:checked + label {
+    display:block;
+    left:0;
+  }
+  .carousel > input:checked ~ label ~ label ~ label {
+    display:block;
+    right:0;
+  }
+  
+  .carousel > label {
+    position:absolute;
+    top:0;
+    width:25%;
+    height:100%;
+    visibility:hidden;
+  }
+  .carousel > label:before {
+    content:'';
+    display:block;
+    position:absolute;
+    width:100%;
+    height:100%;
+    visibility:visible;
+  }
+  .carousel > label:after {
+    display:block;
+    position:absolute;
+    top:50%;
+    width:25px;
+    height:25px;
+    line-height:22px;
+    margin:-15px 10px 0 10px;
+    background-color:black;
+    color:white;
+    font-family:'Arial';
+    font-weight:bold;
+    font-size:18px;
+    text-align:center;
+    visibility:hidden;
+    border:2px solid white;
+    border-radius:20px;
+    box-shadow:0 3px 4px black;
+  }
+  .carousel > label:hover:after {
+    visibility:visible;
+  }
+  
+  .carousel > input:checked + label:after {
+    left:0;
+    content:'\00AB';
+  }
+  .carousel > input:checked ~ label ~ label ~ label:after {
+    right:0;
+    content:'\00BB';
+  }
+  
+body{
+    margin-top: 50px;
+}
+
+.cite{
+    margin-top: 15px;
+    left: 0;  
+}
+
+.boom{
+    margin-top: 10px;
+    left: 0;  
+}
+
+.hoomen{
+    margin-top: 1500px;
+    left: 0;
+} 
+
+.duur{
+    margin-top: 800px;
+  left: 100%;
+}
+
+.Nike{
+   font-size: 200%;
+}
+
+
+#container {
+    font-size: 350%;
+   margin-top: 170px;
+   color: red;
+   left: 20px;
+}
+
+#minigif{
+font-size: 700%;
+margin-top: 200px;
+}
+
+
+    
+.beauty-rotate {
+    width: 136px;
+    height: 137px;
+    
+border-radius: 31px;
+margin-top: 250px;
+    border: 4px double #bd6c46; /* Рамка */
+    overflow: hidden;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+  } 
+  .beauty-rotate:hover {
+    border-radius: 50%;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+   
+  .abobus {
+    width: 136px;
+    height: 136px;
+    
+border-radius: 34px;
+margin-top: 50px;
+    border: 4px double #bd6c46; /* Рамка */
+    overflow: hidden;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+  } 
+  .abobus:hover {
+    border-radius: 50%;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+
+  .amogus {
+    width: 136px;
+    height: 136px;
+    
+border-radius: 34px;
+margin-top: 50px;
+    border: 4px double #bd6c46; /* Рамка */
+    overflow: hidden;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+  } 
+  .amogus:hover {
+    border-radius: 50%;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+
+
+  
+  .acrobus{
+    width: 136px;
+    height: 136px;
+    
+border-radius: 34px;
+margin-top: 50px;
+    border: 4px double #bd6c46; /* Рамка */
+    overflow: hidden;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+  }
+  .acrobus:hover {
+    border-radius: 50%;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+
+  .reol{
+    color: lightskyblue;
+  }
+/* .slider{
+    width: 250px;
+    height: 500px;
+    overflow: hidden;
+}
+.slider img{
+    width: 100%;
+} */
+/*body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+   min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #09161d;*/
